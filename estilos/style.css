@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     }
@@ -36,7 +36,7 @@ header .menu a:hover { /*hover= da una animación*/
 
 .contenedor
 {
-    width: 80%;
+    width: 80%; /*que salga al 80*/
     max-width: 10000px;
     margin: auto;
     overflow: visible;
@@ -106,12 +106,12 @@ header .contenedor {
     top: 0px; /*posición vertical */
     z-index: 0; /* El eje z en 0, en el punto de origen */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35); /* Sombra en la imagen */
-}
+}                                                        
 .main .inicio .foto img {
-    vertical-align: top;
+    vertical-align: top; /*centrar la imagen*/
     width: 100%;
 }
-.tabla .texto .nombre {
+.tabla .texto .nombre { /*Para dar estilo al titulo de las tablas*/
     width: 100%;
     color: #1b1b1b;
     text-align: center;
@@ -121,17 +121,16 @@ header .contenedor {
     background-image: url(../img/amarillofondo.jpg);
 }
 .tabla {
-    padding: 40px 0;
     text-align: center; /* centra el contenido de texto */
     padding: 40px 0; /* da un poco de espacio arriba y abajo */
     background-color: #8210f4;
 }
 .tabla h1 {
-    text-align: center;
+    text-align: center; /*Diseño de los titulos de las tablas*/
     margin-bottom: 20px;
     color: #333;
 }
-.tabla table {
+.tabla table { /*diseño de las tablas*/
     width: 90%;
     margin: auto;
     background-color: white;
@@ -140,26 +139,26 @@ header .contenedor {
 }
 
 .main .galeria {
-    overflow: hidden;
+    overflow: hidden; /*oculta el contenido si se desborda*/
 }
 .main .galeria .foto {
     width: 25%;
-    float: left;
+    float: left; /*se alinean a la derecha*/
 }
-.main .galeria .foto img {
+.main .galeria .foto img { /*configuracion de imagenes del calendario*/
     width: 100%;
     vertical-align: top;
     opacity: .7;
 }
-.main .galeria .foto img:hover {
+.main .galeria .foto img:hover { /*animacion del calendario*/
     opacity: 1;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-.main .publicidad {
-    padding: 0px 0;
-    overflow: hidden;
+.main .publicidad { /*imagen de publicidad*/
+    padding: 0px 0; /*espacio entre el borde del elemento y contenido*/
+    overflow: visible;
 }
 
 /*------------------FOOTER--------*/
