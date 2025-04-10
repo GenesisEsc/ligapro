@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+body{
+    font-family: "Open Sans", Arial, San-serif;
+    font-size: 16px;
+}
+body .menu {
+    width: 100%; /*ocupa el 100 del contenedor*/
+    text-align: right; /*pone al lado derecho*/
+}
+body .menu a { /* busca en el header la clase menu y la letra a*/
+    color: #fff; /*la letra en blanco*/
+    font-size: 20px; /*aumenta el tamaño de la letra*/
+    font-weight: 400; /*aumenta la anchura de la letra*/
+    display: inline-block; /*cambia a las etiquetas de tipo seccion a tipo bloque*/
+    margin: 40px 20px; /*arriba y abajo - derecha izquierda*/
+    text-decoration: none; /*borra la línea de la parte de abajo*/
+    position: relative; /* puede cambiar la posicion en cualquier momento */
+}
+header .menu a:hover { /*hover= da una animación*/
+    text-decoration: underline;/*cuando pasa el cursor se genera la linea*/
+    color: purple;
+}
+
+.main {
+    background: url('../img/moradofondo.jpg');
+    background-size: cover; /* Esto asegura que la imagen cubra toda la sección */
+    background-position: center center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+}
+
+.contenedor
+{
+    width: 80%;
+    max-width: 10000px;
+    margin: auto;
+    overflow: visible;
+}
+.barra-partidos {
+    background-color: #8210f4 ; /*fondo morado para la barra*/
+    padding: 10px 0; /*espacio arriba y abajo dentro de la barra de 10 px de padding vertical 0 a los lados*/
+  }
+  
+.contenedor-partidos {
+    display: inline-flex; /*mostrar todos los partidos uno al lado del otro, en horizontal*/
+    gap: 20px;/*espacio de 20 px entre cada partido*/
+    padding: 0 20px; /*espacio a los lados izquierdo y derecho de la barra*/
+  }
+  
+.partido {
+    color: #fff;/*letra en color blanco*/
+    padding: 10px 15px; /*borde interno, 10 arriba y abajo y 15 iz-derecha*/
+    text-align: center; /*texto centrado*/
+    font-size: 14px; /*letra 14px*/
+    flex-direction: column; /*organiza la informacion en colunma*/
+    gap: 10px; /*agrega espacios dentro de la tarjeta entre fecha, hora e imagenes*/
+  }
+  
+.fecha-hora {
+    font-size: 13px; /*tamaño de la letra*/
+    color: #fff;/*blanco para la letra*/
+  }
+  
+.equipos {
+    display: flex; /*pone las imagenes y el vs en una fila*/
+    align-items: center; /*alinea las imagenes y el vs en la misma linea*/
+    justify-content: center; /*alinea al centro tanto vertical como horizontal*/
+    gap: 10px; /*espacio de 10px entre las imagenes y el vs*/
+  }
+  
+.equipos img {
+    width: 30px; /*tamaño de las imagenes*/
+    height: 30px;
+  }
+  
+  .vs {
+    font-weight: bold; /*texto en negrita*/
+    font-size: 14px; /*tamaño de la letra*/
+  }
+
+header{
+    width: 100%;
+    background: url('../img/amarillofondo.jpg') yellow; /*agrega unaimagen y le pone color en la parte de atrás*/
+    background-size: cover;/*ocupa toda la seccion de mi contenedor*/
+    background-attachment: fixed; /*Mantiene la imagen fija donde se la coloque*/
+    background-position: center 0; /*alinea la imagen*/
+}
+header .contenedor {
+    position: relative; /*cambia el tamaño automaticamente sin darle valor*/
+    height: auto;
+}
+
+.main .inicio .contenedor { 
+    overflow: visible; /*todo lo que se desborde se puede ver*/
+    position: relative;
+}
+.main .inicio .foto {
+    width: 80%; /* Ocupa el 80% del espacio de mi contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    position: relative; /* Usamos position relative para que el contenedor controle el posicionamiento */
+    top: 0px; /*posición vertical */
+    z-index: 0; /* El eje z en 0, en el punto de origen */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35); /* Sombra en la imagen */
+}
+.main .inicio .foto img {
+    vertical-align: top;
+    width: 100%;
+}
+.tabla .texto .nombre {
+    width: 100%;
+    color: #1b1b1b;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 20px;
+    background-image: url(../img/amarillofondo.jpg);
+}
+.tabla {
+    padding: 40px 0;
+    text-align: center; /* centra el contenido de texto */
+    padding: 40px 0; /* da un poco de espacio arriba y abajo */
+    background-color: #8210f4;
+}
+.tabla h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.tabla table {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 0 auto; /* centra la tabla horizontalmente */
+}
+
+.main .galeria {
+    overflow: hidden;
+}
+.main .galeria .foto {
+    width: 25%;
+    float: left;
+}
+.main .galeria .foto img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+}
+.main .galeria .foto img:hover {
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.main .publicidad {
+    padding: 0px 0;
+    overflow: hidden;
+}
+
+/*------------------FOOTER--------*/
+footer {
+    background: #000;
+}
+footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
