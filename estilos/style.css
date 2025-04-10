@@ -52,7 +52,7 @@ header .menu a:hover { /*hover= da una animación*/
     padding: 0 20px; /*espacio a los lados izquierdo y derecho de la barra*/
   }
   
-.partido {
+.partido { /*Letras del contenedor partido*/
     color: #fff;/*letra en color blanco*/
     padding: 10px 15px; /*borde interno, 10 arriba y abajo y 15 iz-derecha*/
     text-align: center; /*texto centrado*/
